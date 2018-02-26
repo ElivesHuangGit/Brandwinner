@@ -1,0 +1,18 @@
+<!--pages/rankList/rankList.wxml-->
+<view class='container list-page'>
+  <image class='rank-list-bg' src='/images/rank-list-bg.png'></image>
+  <scroll-view class='list-view' scroll-y="true">
+    <view class='list-item' wx:for='{{userList}}' wx:key="rankList">
+      <view class='cup-style'>
+        <image class='list-icon' src='/images/list-cup.png'></image>
+        <text class='rank-num'>{{index + 1}}</text>
+      </view>
+      <image class='head-portrait' src="{{item.user.avatarUrl}}"></image>
+      <text class='user-name'>{{item.user.nickName}}</text>
+      <view class='money-num'>￥
+        <text>{{item.bonus}}</text>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

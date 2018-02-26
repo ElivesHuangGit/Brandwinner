@@ -1,0 +1,277 @@
+/* pages/tostart/tostart.wxss */
+page{height:100%}
+.contain {
+  background: #46609f;
+  width: 750rpx;
+  height: 1206rpx;
+  overflow: hidden;
+ 
+}
+
+.imga {
+  width: 750rpx;
+  height: 482rpx;
+}
+
+.center {
+  width: 688rpx;
+  height: 368rpx;
+  background: #87a1cf;
+  border-radius: 6rpx;
+  margin: 14rpx 30rpx 0 30rpx;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.psp {
+  align-items: center;
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: center;
+}
+
+.psp image {
+  width: 24rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.psp text {
+  font-size: 11px;
+}
+
+.bot {
+  margin: 8rpx 0 23rpx;
+}
+
+.bot button {
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 6rpx;
+  color: #fff;
+  font-size: 18px;
+  background: #f6635f;
+}
+
+.endtime {
+  display: flex;
+  align-items: center;
+  margin: 56rpx 160rpx 56rpx 160rpx;
+}
+
+.endtime .txt1 {
+  font-size: 14px;
+  line-height: 28rpx;
+}
+
+.endtime .txt2 {
+  font-size: 32px;
+  line-height: 64rpx;
+}
+
+.top {
+  margin: 30rpx 20rpx 0 20rpx;
+}
+
+.flex-wrp {
+  display: flex;
+}
+
+.flex-item {
+  width: 220rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 12px;
+  text-align: center;
+}
+
+.flex-item1 {
+  height: 42rpx;
+  line-height: 62rpx;
+}
+
+.flex-wrp .bord {
+  border-left: 2rpx #fff solid;
+  border-right: 2rpx #fff solid;
+}
+
+.mid {
+  margin: 44rpx auto;
+  text-align: center;
+}
+
+.mid .into_psp {
+  align-items: center;
+  display: flex;
+  /* width: 240rpx; */
+  justify-content:center;
+
+}
+
+.mid .into_psp image {
+  width: 24rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.mid .into_psp text {
+  font-size: 11px;
+  /* width:150rpx; */
+}
+
+.mid .into_bot {
+  margin: 36rpx 0 23rpx;
+}
+
+.mid .into_bot button {
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 6rpx;
+  color: #fff;
+  font-size: 18px;
+  background: #f6635f;
+  /* position: relative */
+}
+
+.mid .into_endtime {
+  font-size: 11px;
+}
+
+.bottom {
+  background: #f3f3f3;
+  margin: 70rpx 0rpx 0rpx 0rpx;
+  height: 100%;
+ /* justify-content:flex-end; */
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 890rpx;
+  width: 100%;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1px solid #d6d6d6;
+}
+
+.userinfo-nickname {
+  color: #000;
+  font-size: 28rpx;
+}
+
+.attention {
+  display: flex;
+  align-items: center;
+  width: 180rpx;
+  height: 62rpx;
+  background: #f4a049;
+  border-radius: 31rpx 0 0 31rpx;
+  margin: 24rpx 10rpx 0rpx 588rpx;
+}
+
+.attention image {
+  width: 32rpx;
+  height: 26rpx;
+  margin-left: 8rpx;
+  margin-right: 8rpx;
+}
+
+.attention .butt {
+  font-size: 14px;
+  color: #fff;
+  /* position:static; */
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f4a049;
+  line-height: 46rpx;
+}
+
+button[class="butt"]::after {
+  border: 0;
+}
+
+.usercard {
+  overflow: hidden;
+}
+
+.usercard_lf {
+  margin: 70rpx 0 0 70rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  float: left
+}
+
+.usercard_lf .refresh {
+  width: 24rpx;
+  height: 30rpx;
+}
+
+.usercard_lf text {
+  font-size: 26rpx;
+  margin: 0 12rpx 0 12rpx;
+}
+
+.usercard_lf .cardNum {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.usercard_lf .cardNum .grayheart {
+  width: 52rpx;
+  height: 43rpx;
+  border: none;
+}
+
+.usercard_lf .cardNum .num {
+  width: 52rpx;
+  height: 43rpx;
+  color: #fff;
+  position: absolute;
+  top: 0rpx;
+  left: -12rpx;
+  text-align: center; 
+}
+
+.red {
+  color: red;
+}
+
+.usercard_rg {
+  /* margin: -62rpx 20rpx 20rpx 360rpx; */
+  margin:50rpx 40rpx 20rpx 20rpx;
+  float: right
+}
+
+.usercard_rg button {
+  border-radius: 10rpx;
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #f6635f;
+  color: #fff;
+  font-size: 26rpx;
+}
+
+.hide {
+  display:none;
+}
+.show {
+  display:block
+}

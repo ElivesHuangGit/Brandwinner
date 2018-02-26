@@ -1,0 +1,44 @@
+/* pages/anspage_ready/anspage_ready.wxss */
+
+.contain {
+  background: #46609f;
+  width: 750rpx;
+  height: 1220rpx;
+  overflow: hidden;
+}
+
+.center {
+  margin: 114rpx 156rpx 0rpx 156rpx;
+}
+
+.center .top {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40rpx;
+  color: #fff;
+  font-weight: 700;
+}
+
+.countdown {
+  position: relative;
+  margin-top: 10rpx;
+}
+
+.countdown text {
+  color: #fff;
+  font-size: 91px;
+  line-height: 182rpx;
+  position: absolute;
+  top: 90rpx;
+  left: 170rpx;
+}
+
+.countdown image {
+  width: 438rpx;
+  height: 365rpx;
+}
+
+.imga {
+  width: 750rpx;
+  height: 320rpx;
+}

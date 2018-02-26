@@ -1,0 +1,57 @@
+<view class="contain">
+
+  <view class='top' style="flex-direction:row;">
+    <view class='flex-item lf'>
+      <text class='lf_txt1'>复活卡</text>
+      <view class='cardNum'>
+        <image src='{{heartSrc}}'></image>
+        <text class='lf_txt2'>{{cardnum}}</text>
+      </view>
+    </view>
+    <view class='flex-item rg'>
+      <image src='../../images/time_consuming.png'></image>
+      <text>耗时：{{currentUseTime}}秒</text>
+    </view>
+  </view>
+  <view class="bluespecial">
+     <image style="{{imgwh}};" hidden='{{imgHid}}' src='{{ques_img}}'></image> 
+      <video hidden='{{videoHid}}' src="{{ques_video}}" autoplay  controls></video> 
+  </view>
+  <view id='await' class='tipsimg'>
+    <text class='txt' hidden='{{tipTxtHid}}'>{{totalMicroSecond}}</text>
+    <image src="{{tipsimgsrc}}"></image>
+  </view>
+  <view class='bottom'>
+    <view class='issue'>
+      <label class="page_title">{{index+1}}.{{item.question}}</label>
+    </view>
+    <!-- <button class="show-btn" bindtap="showDialogBtn">弹窗</button> -->
+    <view class='answ'>
+      <button id='a' disabled="{{btn_disabled}}" class="btn_op" bindtap="btnOpClick" style="{{bcA}};">
+        <image class='ansicon' src="{{ansiconsrca}}"></image>
+        A. {{item.a}}</button>
+      <button id='b' disabled="{{btn_disabled}}" class="btn_op" bindtap="btnOpClick" style="{{bcB}};">
+        <image class='ansicon' src="{{ansiconsrcb}}"></image>
+        B. {{item.b}}
+      </button>
+      <button id='c' disabled="{{btn_disabled}}" class="btn_op" bindtap="btnOpClick" style="{{bcC}};">
+        <image class='ansicon' src="{{ansiconsrcc}}"></image>
+        C. {{item.c}}</button>
+    </view>
+  </view>
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class='modal-resurheart'>
+    <image src='../../images/resur_heart.png'></image>
+  </view>
+  <view class="modal-title">已复活</view>
+  <view class="modal-content">
+    <text>你已消耗一次复活机会，每次答题只能复活一次。</text>
+  </view>
+  <view class="modal-footer">
+    <button class="btn-confirm" bindtap="onConfirm">继续答题</button>
+  </view>
+</view>

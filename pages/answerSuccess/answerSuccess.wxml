@@ -1,0 +1,75 @@
+<view class='container pageBg' >
+  <image class='brand-banner' src='/images/banner.png'></image>
+
+  <!--答题成功  -->
+   <view class='ans-result' hidden='{{success_hidden}}'>
+    <image class='ans-succe-bg' src='/images/ans-success.png'></image>
+    <view class="userinfo">
+      <block>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        
+      </block>
+    </view>
+    
+    <view class='time-tag'><text>{{thisTime}}</text>秒</view>
+  </view> 
+
+ <!--答题失败  -->
+  <view class='ans-result' hidden='{{failure_hidden}}'>
+    <image class='ans-fail-bg' src='/images/ans-failure2.png'></image>
+     <view class="userinfo">
+      <block>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        
+      </block>
+    </view>
+  </view>
+
+  <view class='fail-result'>
+    <view class='active-rule'>
+      <view>
+        <image src='/images/active-rule.png' class='rule-icon'></image>
+      </view>
+      <view class='rule-text' bindtap='toRule'>活动规则</view>
+    </view>
+    <view class='score'>
+      <view class='short-time'>
+        <view class='font-14'>最短耗时</view>
+        <view class='font-16' wx:if='{{minUserTime !=-1}}'><text>{{minUserTime}}</text>秒</view>
+        <view class='font-16' wx:elif='{{minUserTime ==-1}}'>--</view>
+      </view>
+      <view class='divide-line'>
+        <image src='/images/divide-line.png'></image>
+      </view>
+      <view class='current-rank'>
+        <view class='font-14'>预计奖金</view>
+        <view class='font-16' wx:if='{{minUserTime !=-1}}'><text>{{bonus}}</text>元</view>
+        <view class='font-16' wx:elif='{{minUserTime ==-1}}'>--</view>
+      </view>
+    </view>
+    <view class='encourage font-18' wx:if='{{minUserTime != -1 && success_hidden==false && timeDiff ==0}}'>
+      刷新战绩，保住你的 <text class='color-yellow'>{{bonus}}元</text>
+    </view>
+    <view class='encourage font-18' wx:elif='{{minUserTime == -1 && failure_hidden==false}}'>
+      答对12道题，有机会获得 <text class='color-yellow'>{{bestBones}}元</text>
+    </view>
+    <view class='encourage font-18' wx:elif='{{minUserTime != -1 && timeDiff !=0}}'>
+      你和 <text class='color-yellow'>{{bestBones}}元</text>大奖，还差 <text class='red'>{{timeDiff}}</text> 秒
+    </view>
+    <view class='invit-row'>
+      <button class='invite-btn' bindtap='answerAgain'>
+        返回首页再次答题
+      </button>
+      <button class='care-us' open-type='contact' session-from='{{currentMeetingId}}'>
+        <image src='/images/wechart.png'></image>
+        <text>答题攻略</text>
+      </button>
+    </view> 
+    <view class='life-card'>
+      <image src='/images/redheart.png'></image>
+      <button open-type="share" plain='false'><text>邀请好友得复活卡</text> </button>
+    </view>                                       
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+    <image class="imga" src='../../images/tostart_top.png'></image>
+  <view class='center'>
+    <view class='txt txt1'>
+      <text >为了保证你能正常使用争分夺金，</text>
+    </view>
+    <view class='txt txt2'>
+      <text>请允许获取您的公开信息（头像、昵称）</text>
+    </view>
+    <view class='bot '>
+      <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权 </button> -->
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权 </button>
+    </view>
+  </view>
+
+</view>

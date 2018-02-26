@@ -1,0 +1,103 @@
+<view class='container wait-page'>
+  <image class='wait-list-bg' src='/images/rank-list-bg.png'></image>
+  <view class='wait-view'>
+    <view class='end-txt'>
+      <image src='/images/ans-end.png' class='end-icon'></image>
+      <text>本场答题已结束</text>
+      <image src='/images/ans-end.png' class='end-icon'></image>
+    </view>
+    <view class='intro-window'>
+      <image class='head-portrait' src="{{userInfo.avatarUrl}}"></image>
+      <text class='user-name'>{{userInfo.nickName}}</text>
+
+      <!--成功答题，等待结果  -->
+      <view wx:if='{{isFinal ==false}}'>
+        <view class='intro-top'>最终排名和奖金将在</view>
+        <view class='intro-time'>今天
+          <text>{{resultTime}}</text>左右揭晓
+        </view>
+      </view>
+
+
+      <!--答题时间结束，但未参加答题  -->
+      <view wx:elif='{{isFinal ==true && finialRank ==-1}}'>
+        <view class='no-ans-txt1'>您没有参与答题，</view>
+        <view class='no-ans-txt2'>
+          遗憾错过奖金！
+        </view>
+      </view>
+
+
+      <!--成功答题，结果已出，但未获奖金  -->
+      <view wx:elif='{{isFinal ==true && finialBones==0 && finialRank !=-1}}'>
+        <view class='no-bonus'>
+          <text class='font-16'>排名太靠后，</text>
+          <text class='font-16'>很遗憾没有奖金！</text>
+        </view>
+        <view class='score'>
+          <view class='short-time'>
+            <view class='font-11'>最短耗时</view>
+            <view class='font-14'>
+              <text>{{finialUserBestTime}}</text>秒</view>
+          </view>
+          <view class='divide-line'>
+            <image src='/images/divide-line.png'></image>
+          </view>
+          <view class='current-rank'>
+            <view class='font-11'>最终排名</view>
+            <view class='font-14'>{{finialRank}}</view>
+          </view>
+        </view>
+      </view>
+
+
+      <!--成功答题，结果已出，并获得奖金-->
+      <view wx:else='{{isFinal ==true && finialBones!=0}}'>
+        <view class='get-bonus'>
+          <view class='withdrawal'>
+            <view class='get-money'>{{finialBones}}元</view>
+            <button class='withdrawalBtn' open-type='contact' session-from='{{currentMeetingId}}tixian'>
+              提现
+            </button>
+          </view>
+
+          <view class='congratulate-txt'>恭喜你获得奖金</view>
+        </view>
+        <view class='get-score'>
+          <view class='short-time'>
+            <view class='font-11'>最短耗时</view>
+            <view class='font-14'>
+              <text>{{finialUserBestTime}}</text>秒</view>
+          </view>
+          <view class='divide-line'>
+            <image src='/images/divide-line.png'></image>
+          </view>
+          <view class='current-rank'>
+            <view class='font-11'>最终排名</view>
+            <view class='font-14'>{{finialRank}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='invit-row'>
+      <button class='invite-btn' open-type="share">
+        <text wx:if='{{isFinal ==true && finialBones!=0}}'>炫耀一下</text>
+        <text wx:else>邀请好友备战下一场</text>
+      </button>
+      <button class='care-us' open-type='contact' session-from='{{currentMeetingId}}'>
+        <image src='/images/wechart.png'></image>
+        <text>答题攻略</text>
+      </button>
+    </view>
+    <view class='bottom'>
+      <view class='bottom-rule'>
+        <image src='/images/active-rule.png'></image>
+        <text bindtap='toRule'>活动规则</text>
+      </view>
+      <view class='bottom-rank' bindtap='goRank'>
+        <image src='/images/rank-icon.png'></image>
+        <text>排行榜</text>
+      </view>
+    </view>
+  </view>
+</view>

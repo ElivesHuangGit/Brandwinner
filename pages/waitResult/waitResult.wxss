@@ -1,0 +1,314 @@
+.wait-page {
+  position: relative;
+  font-family: "微软雅黑";
+  overflow: hidden;
+}
+
+.wait-list-bg {
+  width: 750rpx;
+  height: 402rpx;
+  position: absolute;
+  top: 0;
+}
+
+.wait-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 355rpx;
+  z-index: 1;
+}
+
+.end-txt {
+  width: 100%;
+  height: 58rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 22rpx;
+}
+
+.end-txt image {
+  width: 20rpx;
+  height: 26rpx;
+}
+
+.end-txt text {
+  font-size: 24px;
+  margin: 0 22rpx;
+}
+
+.intro-window {
+  width: 620rpx;
+  height: 400rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  position: relative;
+  margin: 50rpx auto 0;
+}
+
+.head-portrait {
+  width: 98rpx;
+  height: 98rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -50rpx;
+  border: 1px solid #d1d1d1;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.user-name {
+  position: absolute;
+  top: 66rpx;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+}
+
+.intro-top {
+  margin-top: 184rpx;
+  width: 100%;
+  height: 30rpx;
+  margin-left: 310rpx;
+  transform: translate(-25%, 0);
+}
+
+.intro-time {
+  width: 100%;
+  height: 30rpx;
+  margin-top: 22rpx;
+  margin-left: 310rpx;
+  transform: translate(-25%, 0);
+}
+
+.invit-row {
+  width: 100%;
+  height: 80rpx;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 57rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.invite-btn {
+  width: 380rpx;
+  height: 80rpx;
+  border-radius: 12rpx;
+  background: #f6635f;
+  color: #fff;
+  font-size: 16px;
+}
+
+.care-us {
+  width: 180rpx;
+  height: 62rpx;
+  background: #f4a049;
+  border-radius: 62rpx 0 0 62rpx;
+  position: absolute;
+  top: 0;
+  right: -8rpx;
+  border: none;
+}
+
+.care-us::after {
+  border: none;
+}
+
+.care-us image {
+  position: absolute;
+  top: 18rpx;
+  left: 10rpx;
+  width: 32rpx;
+  height: 26rpx;
+}
+
+.care-us text {
+  color: #fff;
+  position: absolute;
+  top: -4rpx;
+  left: 50rpx;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.bottom-rule, .bottom-rank {
+  width: 140rpx;
+  height: 30rpx;
+  position: relative;
+}
+
+.bottom-rule {
+  border-right: 1px solid #818181;
+  margin-right: 22rpx;
+  padding-right: 5rpx;
+}
+
+.bottom-rule image {
+  width: 24rpx;
+  height: 28rpx;
+  position: absolute;
+  top: -2rpx;
+  left: 0;
+}
+
+.bottom-rank image {
+  width: 28rpx;
+  height: 30rpx;
+  position: absolute;
+  top: -2rpx;
+  left: 0rpx;
+}
+
+.bottom-rule text, .bottom-rank text {
+  font-size: 12px;
+  color: #818181;
+  position: absolute;
+  top: -4rpx;
+  left: 34rpx;
+}
+
+.no-bonus {
+  margin-top: 134rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score {
+  width: 100%;
+  height: 132rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.get-money {
+  font-size: 32px;
+  color: #f6635f;
+}
+
+.congratulate-txt {
+  margin-top: -20rpx;
+  font-family: "微软雅黑"；;
+}
+
+.short-time, .current-rank {
+  width: 350rpx;
+  height: 140rpx;
+  margin: 28rpx auto 0;
+  text-align: center;
+}
+
+.divide-line {
+  width: 50rpx;
+  height: 140rpx;
+}
+
+.font-11 {
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 14rpx;
+}
+
+.font-14 {
+  font-size: 14px;
+  font-family: "黑体";
+  color: #333;
+}
+
+.font-16 {
+  font-size: 16px;
+  color: #333;
+}
+
+.divide-line image {
+  width: 1rpx;
+  height: 140rpx;
+  margin-left: 25rpx;
+}
+
+.get-bonus {
+  margin-top: 122rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-score {
+  width: 100%;
+  height: 132rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 18rpx;
+}
+
+.no-ans-txt1 {
+  margin-top: 184rpx;
+  height: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-ans-txt2 {
+  height: 30rpx;
+  margin-top: 22rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.withdrawal {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 6rpx;
+  margin-left: 102rpx;
+}
+
+.withdrawalBtn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.withdrawal > .withdrawalBtn {
+  width: 96rpx;
+  height: 40rpx;
+  border: 1px solid #f6635f;
+  border-radius: 20rpx;
+  line-height: 40rpx;
+  color: #f6635f;
+  margin-top: 40rpx;
+  margin-left: 16rpx;
+  text-align: center;
+}
+
+.withdrawalBtn::after {
+  border: none;
+}

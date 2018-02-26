@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/waitResult/waitResult",
+    "pages/index/index",
+    "pages/tostart/tostart",
+    "pages/anspage_ready/anspage_ready",
+    "pages/questions/questions",
+    "pages/answerSuccess/answerSuccess",
+    "pages/rankList/rankList",
+
+    "pages/introduce/introduce",
+    "pages/agreement/agreement"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "争分夺金",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#46609f"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

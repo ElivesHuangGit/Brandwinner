@@ -1,0 +1,80 @@
+<view class="contain">
+  <image class="imga" src='../../images/tostart_top.png'></image>
+  <view class='center' hidden='{{tostart_hidden}}'>
+    <view class='psp' bindtap='torules'>
+      <image src='../../images/txt.png'></image>
+      <text>活动规则</text>
+    </view>
+    <view class='endtime'>
+      <text class='txt1'>倒计时</text>
+      <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+      <text class='txt2'>{{clock}}</text>
+    </view>
+    <form report-submit='true' bindsubmit="formSubmit">
+      <view class='bot'>
+        <button form-type='submit' id="subbtn" disabled="{{formButton}}">{{formtxt}}</button>
+      </view>
+    </form>
+  </view>
+  <view class='center' hidden='{{into_hidden}}'>
+    <view class='top'>
+      <view class="flex-wrp" style="flex-direction:row;">
+        <view class="flex-item ">最短耗时</view>
+        <view class="flex-item ">当前排名</view>
+        <view class="flex-item ">预计奖金</view>
+      </view>
+      <view class="flex-wrp" style="flex-direction:row;">
+        <view class="flex-item flex-item1">{{short_time}}</view>
+        <view class="flex-item flex-item1 bord">{{rank}}</view>
+        <view class="flex-item flex-item1">{{bonus}}</view>
+      </view>
+    </view>
+
+    <view class='mid'>
+      <view class='into_psp' bindtap='torules'>
+        <image src='../../images/txt.png'></image>
+        <text>活动规则</text>
+      </view>
+      <form report-submit='true' bindsubmit="formSubmit">
+      <view class='into_bot'>
+        <button bindtap='toqaReady' form-type='submit'>{{questxt}}</button>
+      </view>
+      </form>
+      <view class='into_endtime'>
+        <text>答题截至</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+        <text>{{endTime}}</text>
+      </view>
+    </view>
+
+  </view>
+  <view class='bottom'>
+    <view class="userinfo">
+      <block>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class='usercard'>
+      <view class='attention'>
+        <image src='../../images/wechart.png'></image>
+        <button class='butt' open-type='contact' session-from='{{currentMeetingId}}'>答题攻略</button>
+      </view>
+      <view class='usercard_lf'>
+        <image class='refresh {{hideArrow}}' src='../../images/refresh.png' bindtap='refreshCards'></image>
+        <loading hidden="{{hideFlag}}">正在加载</loading>
+        <text bindtap='refreshCards'>我的复活卡</text>
+        <!-- <image  wx:if="{{cardnum > 0}}" class='grayheart' src='../../images/redheart.png'></image>
+        <image wx:elif="{{cardnum <= 0}}" class='grayheart' src='../../images/grayheart.png'></image> -->
+        <view class='cardNum'>
+          <image class='grayheart' src="{{cardnum > 0 ? '../../images/redheart.png' : '../../images/grayheart.png'}}"></image>
+          <text class='num'>{{cardnum}}</text>
+        </view>
+      </view>
+      <view class='usercard_rg'>
+        <button open-type="share">邀请好友得复活卡</button>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,12 @@
+<!--pages/anspage_ready/anspage_ready.wxml-->
+<view class="contain">
+  <image class="imga" src='../../images/banner.png'></image>
+  <view class='center'>
+   <view class='top'>马上开始</view>
+   <view class='countdown'>
+   <text>{{clock}}</text>
+   <image src='../../images/countdown.png'></image>
+   </view>
+  </view> 
+
+</view>

@@ -1,0 +1,97 @@
+.container-main {
+  background: #fff;
+  padding: 45rpx 30rpx;
+}
+
+.rule-tit {
+  font-family: "黑体";
+  font-size: 17px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 62rpx;
+}
+
+.tit-line {
+  width: 6rpx;
+  height: 30rpx;
+  background: #f8d13a;
+  margin-right: 22rpx;
+}
+
+.paragraph {
+  margin-bottom: 52rpx;
+  font-weight: 100;
+  line-height: 200%;
+  font-size: 14px;
+  position: relative;
+}
+
+.paragraph-dot {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #f8d13a;
+  position: absolute;
+  top: 12px;
+}
+
+.paragraph-txt {
+  margin-left: 32rpx;
+}
+
+.table {
+  border: 1px solid #e9e9e9;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+}
+
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.th, .td {
+  padding: 4rpx;
+  border-bottom: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+  width: 100%;  
+}
+
+.th {
+  font-weight: 400;
+  text-align: center;
+}
+.prize{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.prize-icon{
+  width: 28rpx;
+  height: 40rpx;
+margin-left:33rpx; 
+margin-right: 56rpx;
+}
+.bonus text{
+  margin-left: 122rpx;
+}
+.remark{
+  margin:30rpx 0 68rpx 10rpx;
+  font-size: 11px;
+  color: #333333;
+}
+.copyright{
+  font-size: 14px;
+  color: #818181;
+  line-height: 200%;
+}
+.agreement{
+  font-size: 11px;
+  color: #333333;
+  text-decoration:underline;
+  margin-top: 70rpx;
+}

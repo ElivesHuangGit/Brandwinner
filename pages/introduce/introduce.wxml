@@ -1,0 +1,125 @@
+<scroll-view class='container container-main' scroll-y="true">
+  <view class='ans-rule'>
+    <view class='rule-tit'>
+      <view class='tit-line'></view>
+      <text>活动规则</text>
+    </view>
+    <view class='paragraph'>
+      <view class='paragraph-dot'></view>
+      <view class='paragraph-txt'>本场活动于{{timeCon}}进行，在活动时间内用户随时可以参与答题；</view>
+    </view>
+    <view class='paragraph'>
+      <view class='paragraph-dot'></view>
+      <view class='paragraph-txt'>每次答题包含12道选择题，每道题必须在30秒内审题和作答，答案不可修改；</view>
+    </view>
+    <view class='paragraph'>
+      <view class='paragraph-dot'></view>
+      <view class='paragraph-txt'>如果中途回答错误或超时未作答，系统会自动使用手中的复活卡。每次答题只能使用一次复活卡，如再次答错或超时，则本次答题失败，只有12道题全部通过才计作本次答题成功；</view>
+    </view>
+    <view class='paragraph'>
+      <view class='paragraph-dot'></view>
+      <view class='paragraph-txt'>在活动时间段内可反复答题，系统将耗时最短的那次答题作为最终成绩，耗时越短，排名越靠前。</view>
+    </view>
+  </view>
+
+  <view class='bonus-dis'>
+    <view class='rule-tit'>
+      <view class='tit-line'></view>
+      <text>奖金分配与发放</text>
+    </view>
+    <view class='paragraph'>
+      <view class='paragraph-dot'></view>
+      <view class='paragraph-txt'>活动结束后，系统会自动计算最终排名和奖金，奖金会自动发放至微信钱包，由于参与人数较多，可能会有延迟，敬请谅解。</view>
+    </view>
+
+    <view class="table">
+      <view class="tr">
+        <view class="th">名次</view>
+        <view class="th">奖金</view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/first.png'></image>
+          <text>1</text>
+        </view>
+        <view class="td bonus"><text>10,000元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/second.png'></image>
+          <text>2</text>
+        </view>
+        <view class="td bonus"><text>5,000元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/third.png'></image>
+          <text>3</text>
+        </view>
+        <view class="td bonus"><text>2,000元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>4-5</text>
+        </view>
+        <view class="td bonus"><text>1,000元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>6-20</text>
+        </view>
+        <view class="td bonus"><text>500元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>21-150</text>
+        </view>
+        <view class="td bonus"><text>100元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>151-700</text>
+        </view>
+        <view class="td bonus"><text>50元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>701-1500</text>
+        </view>
+        <view class="td bonus"><text>20元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>1501-2500</text>
+        </view>
+        <view class="td bonus"><text>10元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>2501-3500</text>
+        </view>
+        <view class="td bonus"><text>5元</text></view>
+      </view>
+      <view class="tr">
+        <view class="td prize">
+          <image class='prize-icon' src='../../images/fourth.png'></image>
+          <text>3501-4500</text>
+        </view>
+        <view class="td bonus"><text>2元</text></view>
+      </view>
+    </view>
+
+    <view class='remark'>* 排名超过4500的用户将无法获得奖金</view>
+    <view class='copyright'>本活动最终解释权归争分夺金团队所有，如有其他问题请在“品牌王者”公众号内咨询。</view>
+    <view class='agreement' bindtap='goAgreement'>用户协议及隐私条款</view>
+  </view>
+
+
+</scroll-view>
